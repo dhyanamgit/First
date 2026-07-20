@@ -40,7 +40,19 @@ variable.sample()
  from sklearn.model_selection import train_test_split
  X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_sixe = 0.2, random_state = 3)
 ```
-* We then initialize ``` LogisticRegression() ```
+* We then initialize ``` LogisticRegression() ``` and store it in a variable. This will be our model.
+* We then fit our model with our features and prediction columns to compare with.
+* We then predict both sets of data; i.e trainig and testing using the ```predict()``` command.
+* We then import ``` accuracy_score ``` from sklearn to check the accuracy for both sets of predictions. This can be done using the command:
+```
+ from sklearn.metrics import accuracy_score
+```
+* We then compare the predictions using accuracy_score and print the scores.
+* We achieve a consistent ~95% accuracy on the first try!
+
+
+
+
 
 
 
